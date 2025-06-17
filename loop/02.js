@@ -35,11 +35,15 @@ console.log(res);
 // 3 -> write a function that return the largest number from an array .
 
 {
-  let arr = [12, 2, 50, 1, 11, 90, 47];
-//   let arr = [];
+  // let arr = [12, 2, 50, 1, 11, 90, 47];
+  let arr = [12];
 
 
   function largest(arr) {
+
+    const result = arr.length === 1 ? arr[0] : arr.length === 0 && null;
+    return result;
+
     let largestValue = arr[0];
     for (let i = 1; i < arr.length; i++) {
       if (arr[i] > largestValue) {
@@ -56,11 +60,15 @@ console.log(res);
 // 3 -> write a function that return the smallest number from an array .
 
 {
-    let arr = [12, 2, 50, 1, 11, 90, 47];
-//   let arr = [];
+    // let arr = [12, 2, 50, 1, 11, 90, 47];
+  let arr = [];
 
 
   function smallest(arr) {
+
+    const result = arr.length === 1 ? arr[0] : arr.length === 0 && null;
+    return result;
+
     let smallestValue = Infinity;
     for (let i = 0; i < arr.length; i++) {
       if (arr[i] < smallestValue) {
